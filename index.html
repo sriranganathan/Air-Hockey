@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Air Hockey</title>
+    <style>
+      #user
+      {
+      position:absolute;
+      top:30px;
+      left:350px;
+      font-size:250%;
+      }
+
+      #result
+      {
+      position:absolute;
+      top:30px;
+      left:610px;
+      font-size:250%;
+      }
+
+      #computer
+      {
+      position:absolute;
+      top:30px;
+      left:970px;
+      font-size:250%;
+      }
+    </style>
+  </head>
+
+  <body onmousemove="ChangeCoordinates(event)">
+    <div id="user">0</div>
+    <div id="result"></div>
+    <div id="computer">0</div>
+    <canvas id="canvas" width="720" height="370" style="background-color:lightblue; margin-top:120px; margin-left:300px;"></canvas>
+    <script type="text/javascript" src="game.js"></script>
+  </body>
+</html>
